@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: c5HjWm0JzOq0pkmQv9l0xGW0RaMTl36bs0//WMfEfUQsC4/iXBc/ty7pvoA17DDN++Ms7RIAXmt16e1ZELN7H9x67x6xsvg8AtcecjOJtZ1oljIBcQwiscCa7jQZkB+ueVvTnlPTWCoQLI8d9HBnGobbJNcprfVALW5/dhY6K6gicFxtsh0lvdZcmEI5De1wyvIxDmq4XyHGMsg3jDVlTaBgHXkYpzsLk1UIIH0u2560m9wTVWq/VMD898w+pAYb+rp6QJSk49H3gkgIQM2TUlE/LvHJLslQLIZ0wTT8XJskJDDuolXMwzSzRyGhTSHpmOF+VnV6A8WGvAMUaE5W/DvtMGLqJdYN78T2743fE/PBJngJo7WiCjzWm/l823IuYVzgMsCFPC3BFR7rAzX92wLAKYAVjihbNdHJJqlPFwXjwnVTEpT1loSLOsu/NiWI0fKVu5J6eiwBpNNwAF5h6wC5cb3sVm27V/RIg7yFTNGU8itgpGC+osi1GleTJ1X+1yhwCJXC3KZlYKFXOEQJjqAuba39OOlOgwAwujQLH/j2Sq8N6LB2MO4UAKIo3dBazvAKVv4bjn/WEG5yfoGusG4ap28VhozJhfLmNagM/pLjLMH7Wy6iDya8HLZ/vBtA+NC4yntHh7lUC9KUsbWrtkeV0h4ciluCVI2tTHTC+fY=
+  app: intense-bayou-38216
+  on:
+    repo: Jollendi91/node-restaurants-app-mongoose
+    branch: feature/with-tests
